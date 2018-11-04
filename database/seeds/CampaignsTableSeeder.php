@@ -20,7 +20,7 @@ class CampaignsTableSeeder extends Seeder
                     'name' => $faker->sentence($maxNbWords = 2, $variableNbWords = true),
                     'headline' => $faker->sentence($nbWords = 4, $variableNbWords = true),
                     'message' => $faker->text($maxNbChars = 100),
-                    'time' => $faker->numberBetween($min = 1, $max = 24),
+                    'time' => $faker->time($format = 'H:00', $max = '23:00'),
                 ]);
             }
         }

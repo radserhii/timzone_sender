@@ -18,7 +18,7 @@ class CreateCampaignsTable extends Migration
             $table->string('name');
             $table->string('headline');
             $table->string('message');
-            $table->integer('time');
+            $table->string('time');
         });
     }
 
