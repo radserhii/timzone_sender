@@ -42,7 +42,7 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" v-model="message"></textarea>
                 <label for="time">Time (hr)</label>
-                <input type="number" class="form-control" id="time" min="1" max="24" v-model="time">
+                <input type="time" class="form-control" id="time" step="600" v-model="time">
             </template>
         </modal-component>
     </div>
