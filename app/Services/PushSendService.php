@@ -26,7 +26,7 @@ class PushSendService
                 if($subscriberTime == $campaign->time) {
                     echo "Campaign name: " . $campaign->name . " Time: " . $campaign->time . "\n";
                     echo "Send push to:" . "\n";
-                    echo "Subscriber: " . $subscriber->name . " Subscriber zones time: " .  Carbon::now($subscriber->timezone) . "\n";
+                    echo "Subscriber: " . $subscriber->name . " Subscriber zone time: " .  Carbon::now($subscriber->timezone) . "\n";
                 }
             }
         }
